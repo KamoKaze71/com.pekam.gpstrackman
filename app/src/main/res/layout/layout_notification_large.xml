@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="fill_parent"
+             tools:context=".MapsActivity">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/notificationLargeTextView"
+                android:text="hallo"
+                />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_gravity="bottom"
+
+                android:id="@+id/notificationLarge"
+
+                android:orientation="horizontal">
+
+            <ImageButton
+                    android:layout_width="101dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_compass_rose_black_24dp"
+                    android:id="@+id/btnPlay"
+                    />
+
+            <ImageButton
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_record_circle_outline_white_48dp"
+                    android:id="@+id/btnRecord"
+                    android:src="@drawable/ic_record_circle_outline_white_36dp"
+                    />
+
+            <ImageButton
+                    android:layout_width="87dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/outline_pause_white_48"
+                    android:id="@+id/btnPause"
+                    />
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/outline_stop_white_48"
+                    android:id="@+id/btnStop"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

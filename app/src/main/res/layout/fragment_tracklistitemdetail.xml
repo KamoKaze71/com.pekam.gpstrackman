@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:background="@color/colorPrimaryDark"
+             android:id="@+id/tbllayout"
+
+             app:layout_scrollFlags="scroll"
+
+             android:orientation="vertical"
+
+             android:baselineAligned="true">
+
+
+    <TableRow
+            android:id="@+id/tblRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_weight="0"
+            android:gravity="left"
+            >
+
+        <TextView
+                style="@style/MyTextViewStyle"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/txtTrackName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:maxWidth="100dp"
+                android:minWidth="100dp"
+                android:layout_weight="1"
+               />
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/tblRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:gravity="left">
+
+        <TextView
+                style="@style/MyTextViewStyle"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/txtTrackDescr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:padding="5dp"
+                android:gravity="top"
+                android:maxWidth="100dp"
+                android:minWidth="100dp"
+                android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow android:layout_height="101dp">
+
+            <TextView
+                    style="@style/MyTextViewStyle"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/txtTrackStatTimeStarted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:gravity="top"
+                    android:maxWidth="100dp"
+                    android:minWidth="100dp"
+                    android:layout_weight="1"/>
+
+
+
+        <TextView
+                style="@style/MyTextViewStyle"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/txtTrackStatPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:gravity="top"
+                android:maxWidth="100dp"
+                android:minWidth="100dp"
+                android:layout_weight="1"
+                />
+
+        <TextView
+                style="@style/MyTextViewStyle"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/txtTrackStatDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:gravity="top"
+                android:maxWidth="100dp"
+                android:minWidth="100dp"
+                android:layout_weight="1"
+                />
+
+        <TextView
+                style="@style/MyTextViewStyle"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/txtTrackStatTimeElapsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                     android:padding="5dp"
+                android:gravity="top"
+                android:maxWidth="100dp"
+                android:minWidth="100dp"
+                android:layout_weight="1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </TableRow>
+    <TableRow
+            android:id="@+id/tblRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="2dp"
+            android:gravity="left"
+            android:visibility="visible">
+
+        <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/ic_crosshairs_gps_grey600_24dp"
+                android:id="@+id/btnrecord"
+                app:tint="@color/red"
+                tools:srcCompat="@drawable/crosshairs_gps"/>
+
+
+        <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@android:drawable/ic_menu_share"
+                android:id="@+id/btnShare"
+                app:tint="@color/red"/>
+
+
+        <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@android:drawable/ic_menu_delete"
+                android:id="@+id/btnDelete"
+                app:tint="@color/red"
+                             />
+    </TableRow>
+
+</TableLayout>

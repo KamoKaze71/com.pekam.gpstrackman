@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">GPS TrackMan</string>
+
+    <string name="openNavDraw">Open</string>
+    <string name="closeNavDraw">Close</string>
+
+    <string name="tracks">My Tracks</string>
+    <string name="log">Show Log</string>
+    <string name="backup">Backup</string>
+    <string name="center_map">Center Map</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="upload">Upload</string>
+    <string name="add_waypoint">Add Waypoint</string>
+    <string name="add_newtrack">Add Waypoint</string>
+    <string name="content_desc">Todo </string>
+    <string name="button_text_confirm">OK</string>
+    <string name="button_text_cancel">Cancel</string>
+
+
+
+    <string name="group_item3"> Group_item3 </string>
+    <string name="submenu_title">SubmenuTitele</string>
+    <string name="submenu_item1">Submenuitem1</string>
+    <string name="submenu_item2">Submenuitem2</string>
+    <string name="submenu_item3">Submenuitem3</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <string name="recording">[recording]</string>
+    <string name="paused">[paused]</string>
+    <string name="stopped">[stopped]</string>
+
+    <string name="play">continue</string>
+    <string name="record">record</string>
+    <string name="pause">pause</string>
+    <string name="stop">stop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

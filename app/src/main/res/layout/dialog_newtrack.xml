@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/linearLayout"
+              android:orientation="vertical">
+
+
+    <TextView
+            android:id="@+id/lblTrackName"
+            android:text="Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:background="@drawable/round_corner"
+            android:layout_marginEnd="4dp"
+
+            android:textColor="#039BE5"/>
+
+    <EditText
+
+            android:id="@+id/txTrackName"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+
+            android:background="@drawable/round_corner"
+            android:enabled="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/txTrackDescr"
+            app:layout_constraintVertical_bias="0.0"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:contentDescription="test name"
+            android:background="@drawable/round_corner"
+            android:enabled="false"
+            android:id="@+id/txTrackDescr"
+
+            android:layout_marginBottom="1dp"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:contentDescription="test name"
+            android:background="@drawable/round_corner"
+            android:enabled="false"
+            android:id="@+id/txTrackDescr2" />
+
+
+    <Button
+            android:text="@string/button_text_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnConfirm" />
+
+    <Button
+            android:text="@string/button_text_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDismiss" />
+
+</LinearLayout>

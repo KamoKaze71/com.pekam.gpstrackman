@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/nav_header_height"
+        >
+
+
+
+
+    <!-- <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:scrollbars="none"  />-->
+
+    <!-- <androidx.fragment.app.FragmentContainerView
+            style="@style/Theme.AppCompat.DayNight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="GpsStatusFragment"
+            android:id="@+id/StatusContainer"
+            tools:layout="@layout/fragment_status"
+            android:gravity="bottom"/>-->
+
+
+</FrameLayout>

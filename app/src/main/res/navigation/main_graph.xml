@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/nav_map"
+            android:label="Karte">
+
+    <fragment
+            android:id="@+id/nav_DialogSave"
+            android:name="com.pekam.gpstrackman.fragments.DialogSaveUserFragment"
+            android:label="Upload Data"
+            tools:layout="@layout/dialog_fragment">
+        <action
+                android:id="@+id/action_nav_DialogSave_to_nav_map"
+                app:destination="@id/nav_map"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/nav_map"
+            android:name="com.pekam.gpstrackman.fragments.MapFragment"
+            android:label="MapFragment"
+            
+            >
+        <action
+                android:id="@+id/action_nav_map_to_nav_dialog_newWaypoint"
+                app:destination="@id/nav_dialog_newWaypoint"/>
+        <action
+                android:id="@+id/action_nav_map_to_nav_DialogSave"
+                app:destination="@id/nav_DialogSave"
+                app:launchSingleTop="false"
+               />
+        <action
+                android:id="@+id/action_nav_map_to_nav_dialog_newTrack"
+                app:destination="@id/nav_dialog_newTrack"/>
+    </fragment>
+
+
+    <fragment
+            android:id="@+id/nav_dialog_newWaypoint"
+            android:name="com.pekam.gpstrackman.fragments.DialogNewWaypoint"
+            android:label="New Waypoint"
+            tools:layout="@layout/dialog_fragment">
+        <action
+                android:id="@+id/action_nav_dialog_newWaypoint_to_nav_map"
+                app:destination="@id/nav_map"/>
+    </fragment>
+    <fragment
+            android:id="@+id/nav_dialog_newTrack"
+            android:name="com.pekam.gpstrackman.fragments.DialogNewTrack"
+            android:label="new Track"
+            tools:layout="@layout/dialog_newtrack">
+        <action
+                android:id="@+id/action_nav_dialog_newTrack_to_nav_map"
+                app:destination="@id/nav_map"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+                />
+    </fragment>
+  <!--  <fragment
+            android:id="@+id/nav_log"
+            android:name="LogFragment"
+            android:label="Show Log"
+            tools:layout="@layout/dialog_fragment"/>-->
+
+
+</navigation>
